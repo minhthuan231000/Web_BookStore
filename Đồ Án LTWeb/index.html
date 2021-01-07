@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<title>Web shop using bootstrap 4</title>
+</head>
+<body background="Img/bg-body-web.png">
+    <!-- Navigation -->
+    <header class="container-fluid">
+        <div class="HeaderTopPage">
+            <div class="container">
+                <nav class="navbar navbar-expand-md sticky-top">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Img/Logo2.png" height=80>    
+                    </a>
+                    <a class="navbar-brand" href="index.html">
+                        <h1>TITI</h1>
+                    </a>
+                
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm sản phẩm mà bạn mong muốn..." style="border-radius: 60px 0px 0px 60px;">
+                        <div class="input-group-append">
+                            <button style="background: rgb(13, 92, 182); border-radius: 0px 60px 60px 0px;" class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                                Tìm Kiếm
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="margin-left: 20px;" class="collapse navbar-collapse" id="navbarReponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link ative" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-left: 20px;" class="collapse navbar-collapse" id="navbarReponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#CartItem">
+                                    <img src="Img/Car-Shop.png" height="30px" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="category" id="Category">
+                  <strong style="color: aliceblue;">DANH MỤC SẢN PHẨM</strong>
+                </div>
+                <div class="list-group">
+                    <a href="#SachVanHoc" class="list-group-item list-group-item-action">Sách Văn Học</a>
+                    <a href="#SachXaHoi" class="list-group-item list-group-item-action">Sách Xã Hội</a>
+                    <a href="#SachGiaoKhoa" class="list-group-item list-group-item-action">Sách Giáo Khoa</a>
+                    <a href="#SachThamKhao" class="list-group-item list-group-item-action">Sách Tham Khảo</a>
+                    <a href="#SachKyNang" class="list-group-item list-group-item-action">Sách Kỹ Năng</a>
+                    <a href="#TieuThuyet" class="list-group-item list-group-item-action">Tiểu thuyết</a>
+                    <a href="#TruyenTranh" class="list-group-item list-group-item-action">Truyện tranh</a>
+                    <a href="#SachNgoaiNgu" class="list-group-item list-group-item-action">Sách Học Ngoại Ngữ</a>
+                    <a href="#TruyenTranh" class="list-group-item list-group-item-action">Truyện tranh</a>
+                </div>
+            </div>
+            <div class="col-md-9" id="ImgProduct">
+                <div class="container">
+                    <div id="slides" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#slides" data-slide-to="0" class="active"></li>
+                          <li data-target="#slides" data-slide-to="1"></li>
+                          <li data-target="#slides" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" >
+                            <img src="Img/Ad-Pic1.png" style="align-items: stretch;" alt="Advertised">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Img/Ad-Pic2.png" style="align-self: stretch;" alt="Advertised">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Img/Ad-Pic3.png" alt="Advertised">
+                          </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#slides" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <!-- Somes Products -->
+    <div class="container" style="margin-top: 20px;">
+        <div class="Products">
+            <div class="header">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" style="color: black;">HOT NEW</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: black;">HOT PRODUCT</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="ListProduct">
+            <div class="content">
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/DacNhanTam.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Đắc Nhân Tâm</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (2345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        122.200 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        35%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/HoaHongXuKhac.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+                                </div>
+                                <div class="name">
+                                    <span><h5>Hoa Hồng Xứ Khác (tái bản 2019)</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (1345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        98.800 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        45%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/MacBiec.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Mắt Biếc (tải bản 2020)</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (2345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        86.500 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        25%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/NeuMotNgayCauRoiXa.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Nếu Một Ngày Cậu Rời Xa</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (1895)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        102.500 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/NhaGiaKim.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Nhà Giả Kim</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (2545)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        142.700 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        15%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/DungLuaChonAnNhanKhiConTre.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Đừng Lựa Chọn An Nhàn Khi Còn Trẻ</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (3395)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        50.900 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        40%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/GiaiMaSieuTriNho.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Giải Mã Siêu Trí Nhớ</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (2345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        138.200 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        5%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/ChoToiMotVeDiTuoiTho.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Cho Tôi Một Vé Đi Tuổi Thơ (tái bản 2019)</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (2345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        92.800 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        30%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/HanhTrinhVePhuongDong.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Hành Trình Về Phương Đông</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (1345)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        203.500 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        15%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+                <a class="product-item" data-view="pdp_infinity_item">
+                    <span class="DetailProduct">
+                        <div>
+                            <div class="thumbnail">
+                                <img data-src="#" alt="" src="ImgProduct/CarlSaGan.png">
+                            </div>
+                            <div class="info">
+                                <div class="badge-service">
+
+                                </div>
+                                <div class="name">
+                                    <span><h5>Vũ Trụ - Carl SaGan</h5></span>
+                                </div>
+                                <div class="rating-review">
+                                    <div class="rating">
+                                        <div class="rating-total">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#c7c7c7" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(199, 199, 199);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="rating_average">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="12" color="#fdd836" height="12" width="12" xmlns="http://www.w3.org/2000/svg" style="color: rgb(253, 216, 54);">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        (1945)
+                                    </div>
+                                </div>
+                                <div class="price-discount">
+                                    <div class="price-discount_price">
+                                        84.900 ₫
+                                    </div>
+                                    <div class="price-discount_discount">
+                                        55%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="tabs-xem-them xem-them-item-aaa">
+                <a href="flashsale">Xem Thêm</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: transparent; margin-top: 30px;">
+        <div class="container" style="display: block;">
+            <img src="Img/Event-Sale.png" style=" margin-left: 5px;" height="150px" width="360px" alt="">
+            <img src="Img/bg-Event-Sale.png" style=" margin-left: 5px;" height="150px" width="360px" alt="">
+            <img src="Img/Bg-Sale.png" style=" margin-left: 5px;" height="150px" width="360px" alt="">
+        </div>
+    </div>
+    <!-- Receive Email -->
+    <div class="container-fluid" style="background-color: transparent; margin-top: 15px; image-orientation: flip;">
+        <div class="container">
+            <div class="footer-top">
+                <div class="container footerEmail">
+                    <div class="NewsLetter-icon">
+                        <img src="Img/Email.png" width="163" alt="">
+                    </div>
+                    <div class="NewsLetter-description">
+                        <h3>Đăng ký nhận bản tin Titi</h3>
+                        <h5>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h5>
+                    </div>
+                    <div class="NewsLetter-form">
+                        <form class="form-inline" action="/action_page.php">
+                            <input class="form-control mr-sm-1" width="" type="email" placeholder="Dịa chỉ email của bạn" value>
+                            <button class="btn btn-info" type="submit">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container" style="background-color: transparent;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Liên Hệ Với Chúng Tôi</h3>
+                    <h5>Chi nhánh tại TP.HCM</h5>
+                    <h6>Địa chỉ 135 Trần Hưng đạo, Phường Cầu Ông Lãnh Q.1</h6>
+                    <h6 style="color: red;">Phone: 0808 1508</h6>
+                    <h5>Tên doanh nghiệp</h5>
+                    <h6>TiTi Shop Online</h6>
+                </div>
+                <div class="col-md-3">
+                    <h3>Về TITI</h3>
+                    <h5>Giới thiệu Titi</h5>
+                    <h5>Chính sách bảo mật và thanh toán</h5>
+                    <h5>Điều khoản sử dụng</h5>
+                </div>
+                <div class="col-md-5">
+                    <div class="block">
+                        <h3>Phương Thức Thanh Toán</h3>
+                        <p>
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="54" alt="">
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="54" alt="">
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/jcb.svg" width="54" alt="">
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="54" alt="">
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="54" alt="">
+                            <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="54" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,296 @@
+
+.navbar-brand{
+    color: aliceblue;
+}
+.container-fluid{
+    background-color: rgb(1, 127, 255);
+}
+.container .col-md-9{
+    margin-left: 0%;
+}
+.form-inline  .form-group .input{
+    background-color: aqua;
+}
+.input-group{
+    border-radius: 60px;
+}
+.HeaderTopPage {
+    position: relative;
+    z-index: 999;
+    height: auto;
+    letter-spacing: normal;
+}
+html {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: rgb(239, 239, 239);
+}
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+div{
+    display: block;
+}
+header{
+    font-size: 18px;
+    background-image: linear-gradient(to right, #00c3ff, #F7695D);
+}
+.navbar{
+    color: aliceblue !important;
+}
+.navbar li{
+    border-radius: 60px 60px 60px 60px;
+    margin-left: 10px;
+}
+.navbar li a{
+    color: white !important;  
+}
+.navbar li a:hover{
+    color: rgb(13, 92, 182) !important;  
+}
+.category{
+    width: 100%;
+    background-color: rgb(13, 92, 182);;
+    font-size: 20px;
+    font-weight: 500;
+    flex: 1 1 0%;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.list-group-item:hover{
+    background-color:  rgb(90, 164, 250) !important;
+}
+.some_product{
+    text-align: center;
+    font-size: 15px;
+}
+footer{
+    margin-top: 15px;
+    background-image: linear-gradient(to right, #00c3ff, #F7695D);
+    height: auto;
+}
+#titi-slider {
+    border: 1px solid #e6e6e6;
+    background: white;
+    display: none;
+}
+.titi-header{
+    background-image: linear-gradient(to right, #00c3ff, #F7695D);
+}
+.QuarityItem {
+    color: rgb(36, 36, 36);
+    background: rgb(253, 216, 53);
+    height: 20px;
+    left: 20px;
+    top: -2px;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    padding: 0px 7px;
+}
+.card{
+    width: 200px;
+    height: 390px;
+    text-transform: capitalize;
+    text-align: start;
+    margin-left: 4px;
+}
+.Products{
+    background: white;
+    margin: 16px 0px 0px;
+    border-radius: 4px;
+}
+.Products .header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background: white;
+    border-radius: 4px 4px 0px 0px;
+    background-image: linear-gradient(to right, #00c3ff, #F7695D);
+}
+.Products .header .tab {
+    display: flex;
+    width: 248px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.ListProduct {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background: white;
+    padding: 0px 0px 16px;
+    margin-bottom: 24px;
+    border-radius: 0px 0px 4px 4px;
+}
+.ListProduct > .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(242, 242, 242);
+}
+.ListProduct > .content .product-item {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.ListProduct > .content .product-item:hover {
+    box-shadow: 5px 5px 15px rgb(59, 59, 59);
+}
+.DetailProduct {
+    display: flex;
+    padding: 12px 16px;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.DetailProduct .thumbnail {
+    flex-shrink: 0;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0px 12px;
+    text-align: center;
+}
+.DetailProduct .badge-service {
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+.DetailProduct .name {
+    max-width: 200px;
+    max-height: 200px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.DetailProduct .rating-review {
+    display: flex;
+    margin-top: 4px;
+}
+.DetailProduct .rating {
+    position: relative;
+    margin: 0px 4px 0px 0px;
+}
+.DetailProduct .rating_average {
+    white-space: nowrap;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+svg{
+    stroke: currentcolor;
+    fill: currentcolor;
+    stroke-width: 0;
+    color: rgb(199, 199, 199);
+    height: 12;
+    width: 12;
+}
+.DetailProduct .review {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(120, 120, 120);
+}
+.DetailProduct .price-discount {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.DetailProduct .price-discount_price {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0px 8px 0px 0px;
+}
+.DetailProduct .price-discount_discount {
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 2px;
+    background: rgb(255, 66, 78);
+    color: white;
+    padding: 0px 2px;
+}
+.product-item img{
+    max-width: 190px;
+    max-height: 190px;
+}
+.tabs-xem-them.xem-them-item-aaa {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.xem-them-item-aaa a {
+    box-shadow: 2px 3px 5px rgb(250, 9, 9);
+    font-size: 14px;
+    color: #fff!important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: 220px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #00c3ff, #F7695D);
+    transition: transform .2s;
+}
+.xem-them-item-aaa a:hover {
+    box-shadow: 5px 5px 15px rgb(59, 59, 59);
+}
+.footer-top{
+    background-color: rgb(247, 247, 247);
+    display: inline-block;
+}
+.container .footerEmail {
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+.footer-top .NewsLetter-icon {
+    margin-top: -50px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.footer-top .NewsLetter-description {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    color: rgb(78, 80, 82);
+    display: inline-block;
+    margin-top: 20px;
+}
+.footer-top .NewsLetter-form {
+    display: inline-block;
+}
+.container .ContactUs h3 h5 h6{
+    display: inline-block;
+}
+.container .ContactUs .LeftContact{
+    width: 35%;
+    border-right: black 2px dotted;
+}
+.footer .block .icon {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    vertical-align: middle;
+}
